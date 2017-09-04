@@ -189,3 +189,9 @@ interface CoffeeShop {
  ```
 
  组件可能会应用于多个范围注解。This declares that they are all aliases to the same scope, and so that component may include scoped bindings with any of the scopes it declares.
+
+ ## 可重用范围
+
+ 有时，你想限制 `@Inject`类构建的实例个数或限制 `@Provides`方法调用的次数，但你不需要保证特定的组件和子组件再生命周期中精确地使用同一个实例。在 Android 这种分配内存很昂贵的环境中，这会很有用。
+
+ >> to continue
