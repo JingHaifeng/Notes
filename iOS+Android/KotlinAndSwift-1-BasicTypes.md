@@ -1,6 +1,11 @@
 
 # Basic
 
+# Kotlin
+
+var 变量
+vel 常量
+
 ## 基本类型
 
 ### 数字
@@ -247,3 +252,62 @@ package my.demo
 import java.util.*
 ```
 `目录与包的结构无需匹配：源代码可以在文件系统的任意位置。`
+
+# Swift
+
+var 变量
+let 常量
+
+## 字符串插入
+通过 `\()` 语法,将括号内的结果插入字符串中
+
+``` swift
+let numberOfStopligts :Int = 4
+var polulation: Int
+polulation = 5422
+let townName: String = "Knowhere"
+let townDescription = "\(townName.count) has a polulation of \(polulation) and \(numberOfStopligts) stoplights"
+print(townDescription)
+```
+
+## 数字
+
+### 整数
+以 `Int` ，`UInt`声明，存在 Int8,Int16,Int32,Int64。默认 Int 会在被编译器根据设备不同，编译成不同的长度。
+
+支持常规算术运算
+
+#### 溢出操作符
+
+`&+`
+
+``` swift
+let x : Int8 = 120 
+let y = x &+ 10 // (x + 10) 会是一个 8 位的数字，&+ 符号使之 -126 溢出操作
+```
+
+#### 相互转换
+
+不同位宽的整数是无法算术加减，需要转换为同一位宽。
+
+``` swift
+let x : Int8 = -120
+let y : Int16 = 130
+let z = Int16(x) + y
+```
+
+建议使用 `Int` 而不是指定位宽的整型。
+
+### 浮点数
+默认小数值是 Double 类型
+
+* Double 64
+* Float 32
+
+浮点数加减后，实际存储的值可能与算术值有微小差异，判断相等 == 可能出现预期之外的结果
+
+## String
+
+### String 由 Character 组成，且都是 Unicode
+
+

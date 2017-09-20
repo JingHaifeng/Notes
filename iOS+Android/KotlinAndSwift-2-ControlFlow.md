@@ -1,4 +1,6 @@
 
+# Kotlin
+
 ## if 表达式
 
 在 Kotlin 中，if是一个表达式，即它会返回一个值。 因此就不需要三元运算符（条件 ? 然后 : 否则），因为普通的 if 就能胜任这个角色。
@@ -161,3 +163,87 @@ do {
 ## 循环中的Break和continue
 
 在循环中 Kotlin 支持传统的 break 和 continue 操作符。参见返回和跳转。
+
+# Swift
+
+## if/else if/else
+
+`condition` 可以不用括号，但是
+
+``` swift
+let numberOfStopligts :Int = 4
+var polulation: Int
+polulation = 5422
+var message: String
+if polulation < 10000 {
+    message = "\(polulation) is a small town!"
+} else{
+    message = "\(polulation) is pretty big!"
+}
+
+print(message)
+```
+
+支持三元运算符
+
+## swith
+
+``` swift
+switch aValue {
+    case someValueToCompare:
+        // Do something
+    case anotherValueToCompare:
+        // Do something
+    case a,b,c:
+        // Do a,b,c 
+    case 1...10:
+        // Do 1~10 
+    case let unkownCode where unkownCode > 100 || unkownCode < 0:
+        // 数值绑定
+    default:
+        // Do something when there are no matches
+}
+```
+
+多个状态码：使用逗号分隔。
+
+某个有范围时，使用 Range 表示。
+
+支持 where 语句 + 值绑定。
+
+支持元组，模式匹配
+
+``` swift
+let error = (100,101)
+
+switch error {
+case (100,101):
+    print("101,101:\(error)")
+case (_,100):
+    // _ 匹配任意
+default:
+    print("default")
+}
+
+```
+
+## 循环
+
+### for in
+
+``` swift
+for i in 1...5 {
+    print(i)
+}
+```
+
+可以使用 _ 替换具体声明的变量
+
+可以使用 `where` 语句
+
+### while 
+
+### repeat-while 
+
+do - while
+
