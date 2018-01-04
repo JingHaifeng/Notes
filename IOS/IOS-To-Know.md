@@ -1,20 +1,24 @@
 # 需要了解的知识点
 
 ## 操作系统
-* [ ] iOS
-* [ ] macOS
+* [x] iOS
+* [x] macOS
 * [x] Linux 常用命令
 * [ ] watchOS 
 * [ ] tvOS
 
 ## 编程语言
-* [ ] Swift
-* [ ] Objective-C
+* [-] Swift
+* [-] Objective-C
 * [ ] C/C++
 * [ ] JavaScript
 
 ## 开发基础
-* [ ] UI 控件
+* [ ] UI 控件 
+    * [ ] UIKit 架构
+    * [x] 事件传递原理
+    * [ ] 图形绘制原理
+    * [ ] 常用组件
 * [ ] Storyboard & Xib
 * [ ] Autolayout
 * [ ] Core Data & Sqlite
